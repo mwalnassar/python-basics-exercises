@@ -12,6 +12,10 @@ data = ((1, 2), (3, 4))
 for i in range(len(data)):
     print(f"Row {i+1} sum: {data[i][0] + data[i][1]}")
 
+# also the above exercise can written in the below way
+for row in data:
+    x, y = row
+    print(f"Row {int(data.index(row)) + 1} sum {x + y}")
 
 # Exercise 3
 # Create the list [4, 3, 2, 1] and assign it to variable numbers
